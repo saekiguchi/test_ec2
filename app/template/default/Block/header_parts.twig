@@ -1,0 +1,30 @@
+{#<div class="ec-headerNaviRole">#}
+{#    <div class="ec-headerNaviRole__left">#}
+{#        <div class="ec-headerNaviRole__search">#}
+{#            {{ render(path('block_search_product')) }}#}
+{#        </div>#}
+{#        <div class="ec-headerRole__navSP">#}
+{#            {{ include('Block/nav_sp.twig') }}#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="ec-headerNaviRole__right">#}
+{#        <div class="ec-headerNaviRole__nav">#}
+{#            {{ include('Block/login.twig') }}#}
+{#        </div>#}
+{#        <div class="ec-headerRole__cart">#}
+{#            {{ include('Block/cart.twig') }}#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+<div class="header__inner">
+    <div class="row">
+        {{ include ('Block/logo.twig') }}
+        {{ include ('Block/header_nav_parts.twig' ) }}
+        <div class="header__btn show_sp" id="header__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>

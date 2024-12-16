@@ -1,0 +1,25 @@
+{#<div class="ec-headerRole">#}
+{#    <div class="ec-headerRole__title">#}
+{#        <div class="ec-headerTitle">#}
+{#            <div class="ec-headerTitle__title">#}
+{#                <h1>#}
+{#                    <a href="{{ url('homepage') }}">#}
+{#                        {{ BaseInfo.shop_name }}#}
+{#                        <img src="/test_ec/html/user_data/assets/img/common/logo.svg">#}
+{#                    </a>#}
+{#                </h1>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+<h1>
+    <a href="{{ url('homepage') }}">
+        <picture>
+            <source media="(max-width: 768px)" srcset="/test_ec/html/user_data/assets/img/common/logo--wide.svg">
+            <source media="(max-width: 1200px) and (min-width: 769px)" srcset="/test_ec/html/user_data/assets/img/common/logo--narrow.svg">
+            <img src="/test_ec/html/user_data/assets/img/common/logo--wide.svg">            
+        </picture>
+        
+    </a>
+</h1>

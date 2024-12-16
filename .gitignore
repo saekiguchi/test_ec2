@@ -1,0 +1,9 @@
+/vendor/
+/html/user_data/
+/html/template_c/
+/html/upload/
+/html/backup/
+/html/logs/
+/html/temp/
+/composer.lock
+/config/eccube/path.yml
