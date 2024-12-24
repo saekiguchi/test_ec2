@@ -34,6 +34,7 @@ file that was distributed with this source code.
     {% endif %}
     <link rel="icon" href="{{ asset('assets/img/common/favicon.ico', 'user_data') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('assets/css/common.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <script src="{{ asset('front.bundle.js', 'bundle') }}"></script>
     {% block stylesheet %}{% endblock %}
@@ -53,6 +54,7 @@ file that was distributed with this source code.
     {# プラグイン用styleseetやmetatagなど #}
     {% if plugin_assets is defined %}{{ include('@admin/snippet.twig', { snippets: plugin_assets }) }}{% endif %}
     <link rel="stylesheet" href="{{ asset('assets/css/customize.css', 'user_data') }}">
+    
 </head>
 <body id="page_{{ app.request.get('_route') }}" class="{{ body_class|default('other_page') }}">
 {# Layout: BODY_AFTER #}
@@ -179,6 +181,7 @@ file that was distributed with this source code.
 {% include('@common/lang.twig') %}
 <script src="{{ asset('assets/js/function.js') }}"></script>
 <script src="{{ asset('assets/js/eccube.js') }}"></script>
+<script src="{{ asset('assets/js/script.js') }}"></script>
 {% block javascript %}{% endblock %}
 {# Layout: CLOSE_BODY_BEFORE #}
 {% if Layout.CloseBodyBefore %}
@@ -189,5 +192,5 @@ file that was distributed with this source code.
     {{ include('snippet.twig', { snippets: plugin_snippets }) }}
 {% endif %}
     <script src="{{ asset('assets/js/customize.js', 'user_data') }}"></script>
-</body><!--test-->
+</body>
 </html>
