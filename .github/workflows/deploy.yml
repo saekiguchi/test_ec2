@@ -37,6 +37,5 @@ jobs:
                     **.lock
                     postcss.config.js
                     **/src/**
-                    var/**
 
-# test17
+# test18
