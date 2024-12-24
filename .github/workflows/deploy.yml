@@ -21,7 +21,6 @@ jobs:
                   username: ${{ secrets.FTP_USERNAME }}
                   password: ${{ secrets.FTP_PASSWORD }}
                   server-dir: ${{ secrets.FTP_SERVER_DIR }}
-                  dangerous-clean-slate: false
-                  delete: false
+                  dangerous-clean-slate: falses
                   exclude: "[**/.**/**, .gitignore,  **/.git/**, **/node_modules/**, **/vendor/**, .editorconfig, README.md, .phpcs.xml.dist, **.json, **.lock, postcss.config.js, **/src/**]"
-#test5
+#test6
