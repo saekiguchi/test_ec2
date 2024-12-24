@@ -12,10 +12,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
 
             - name: Sync files
-              uses: SamKirkland/FTP-Deploy-Action@4.1.0
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
               continue-on-error: true
               with:
                   server: ${{ secrets.FTP_SERVER }}
@@ -23,21 +23,6 @@ jobs:
                   password: ${{ secrets.FTP_PASSWORD }}
                   server-dir: ${{ secrets.FTP_SERVER_DIR }}
                   dangerous-clean-slate: false
-                  skip-cleanup-on-error: true
                   exclude: "[**/.**/**, .gitignore, **/.git/**, **/node_modules/**, **/vendor/**, .editorconfig, README.md, .phpcs.xml.dist, **.json, **.lock, postcss.config.js, **/src/**, var/**]"
 
-            - name: Install lftp
-              run: sudo apt-get install -y lftp
-
-            - name: Deploy via FTP
-              run: |
-                lftp -c "
-                set ftp:ssl-allow yes;
-                open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};
-                mirror --reverse --continue --delete --exclude-glob var/** ./ ${{ secrets.FTP_SERVER_DIR }};
-                bye;
-                "
-
-
-
-#test15
+#test16
