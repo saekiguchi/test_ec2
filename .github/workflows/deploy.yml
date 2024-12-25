@@ -27,16 +27,16 @@ jobs:
                   exclude: |
                     **/.**/**
                     .gitignore
-                    **/.git/**
+                    # **/.git/**
                     **/node_modules/**
-                    **/vendor/**
+                    # **/vendor/**
                     .editorconfig
                     README.md
                     .phpcs.xml.dist
                     **.json
                     **.lock
                     postcss.config.js
-                    **/src/**
-                    var/**
+                    # **/src/**
+                    # var/**
 
 # deploytest
