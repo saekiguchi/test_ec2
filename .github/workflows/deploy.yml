@@ -38,4 +38,5 @@ jobs:
                     postcss.config.js
                     **/src/**
                     var/**
+                force-upload: true
 # deploytest
