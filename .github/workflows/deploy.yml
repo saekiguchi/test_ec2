@@ -29,7 +29,7 @@ jobs:
                     .gitignore
                     **/.git/**
                     **/node_modules/**
-                    **/vendor/**
+                    # **/vendor/**
                     .editorconfig
                     README.md
                     .phpcs.xml.dist
