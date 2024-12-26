@@ -33,7 +33,8 @@ jobs:
                     .editorconfig
                     README.md
                     .phpcs.xml.dist
-                    **.json
+                    .ftp-deploy-sync-state.json
+                    babel.condig.json
                     **.lock
                     postcss.config.js
                     # **/src/**
