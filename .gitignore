@@ -5,5 +5,5 @@
 /html/backup/
 /html/logs/
 /html/temp/
-/composer.lock
+# /composer.lock
 /config/eccube/path.yml
